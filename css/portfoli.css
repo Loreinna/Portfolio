@@ -1,0 +1,86 @@
+:root {
+    font-size: 14pt !important;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-grey: #5B5B5B;
+    --color-dark-white:#f1eeeeb7;
+    --color-blue:#2F547F;
+    --color-light-grey:#E2E5Ed;
+    --color-but-grey:#424346;
+}
+.intro-block {
+    width: 1380px;
+    height: 294px;
+    background-color:var(--color-light-grey);;
+
+}
+.intro-text {
+    font-family: "Streamster";
+    font-size: 64pt;
+    margin-top: 2rem;
+}
+.portfolio-block {
+    width: 73.95rem;
+    height: 96rem;
+    background-color:#f1eeee;
+
+}
+.picture-block {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: var(--color-but-grey);
+    padding: 0% !important;
+    border-radius: 5%;
+    
+     
+}
+.picture-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 1%;
+    cursor: pointer;
+    transition:filter 0.3s ease;
+    
+  }
+.picture-block img:hover {
+    filter: brightness(40%) !important;
+  }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+.picture-block:hover .overlay {
+    opacity: 1;
+    color: var(--color-white);
+    
+}
+/* 
+.picture-button {
+    background-color: rgba(28,28,28,0);
+    border: none;
+    color: white;
+    opacity: 0;
+    display: inline-block;
+    transition: opacity 0.3s ease;
+    font-size: 20pt;
+}
+
+.picture-block:hover .picture-button {
+    opacity: 1;
+} */
+.margin-top {
+    margin-top: 3rem;
+}
